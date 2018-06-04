@@ -36,3 +36,7 @@ class User:
             comment for comment in User.comments if comments['id'] == id
         ]
         User.comments.remove(delete_comment[0])
+
+
+user1 = User('test', '12345')
+user1.save_user()
