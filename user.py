@@ -33,7 +33,7 @@ class User:
 
     def delete_comment(self, id):
         delete_comment = [
-            comment for comment in User.comments if comments['id'] == id
+            comment for comment in User.comments if comment['id'] == id
         ]
         User.comments.remove(delete_comment[0])
 
